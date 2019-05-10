@@ -10,3 +10,4 @@ def QuickSort(lists):
 			else:
 				continue
 
+print('change')
