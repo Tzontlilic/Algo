@@ -24,3 +24,4 @@ def Merge(L, R):
 	return result
 
 print(MergeSort([1,1,12,3,4]))
+print("change")
