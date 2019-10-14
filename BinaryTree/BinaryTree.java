@@ -74,7 +74,11 @@ public class BinaryTree{
 	
 
 	/*                                                广度优先遍历                             */
+
 	// 利用队列的数据结构，实现层级遍历。
+    // 这种利用队列进行层级遍历的方法非常的巧妙
+    // 从根结点开始，依次将根节点的左孩子进入队列，再将右孩子进入队列
+    // 当左孩子作为队头被poll时，会把左孩子的左孩子和右孩子依次加进队列
 	public static void levelOrderTraversal(TreeNode root){
 	
 		Queue<TreeNode> queue = new LinkedList<TreeNode>();
