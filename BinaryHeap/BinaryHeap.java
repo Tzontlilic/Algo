@@ -6,8 +6,6 @@ import java.util.Arrays;
 
 public class BinaryHeap {
 
-
-
     /*
      * 上浮操作
      * 当二叉堆插入节点时，插入的位置是完全二叉树的最后一个位置。
@@ -37,8 +35,6 @@ public class BinaryHeap {
         // 当跳出循环时，将temp临时储存的插入值赋值
         array[childIndex] = temp;
     }
-    
-
 
     /*
      * 下沉操作
