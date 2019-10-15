@@ -23,7 +23,6 @@ public  class max_BinaryHeap{
             childIndex = parentIndex;
             parentIndex = (childIndex - 1) / 2;
         }
-
         array[childIndex] = temp;
     
     } 
