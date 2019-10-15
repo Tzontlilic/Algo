@@ -1,10 +1,10 @@
 import java.util.Arrays;
 // 二叉堆的实现代码
-//
+// 这是一个最小堆
 //
 //
 
-public class BinaryHeap {
+public class min_BinaryHeap {
 
     /*
      * 上浮操作
@@ -118,7 +118,7 @@ public class BinaryHeap {
          *                /    \  
          *              9       6
          */
-        bulidHeap(array2);
+        bulidHeap(array2); // 对于一个无序的数组，可以使用下沉操作来构建出一个二叉堆
         System.out.println(Arrays.toString(array2));
         
     }
