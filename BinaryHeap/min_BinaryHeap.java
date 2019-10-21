@@ -6,13 +6,11 @@ import java.util.Arrays;
 
 public class min_BinaryHeap {
 
-    /*
-     * 上浮操作
-     * 当二叉堆插入节点时，插入的位置是完全二叉树的最后一个位置。
-     * 然后再和其父节点进行比较，如果不符合最小堆的性质，就让新插入的节点上浮，和父节点交换位置
+    /** 上浮操作
+     *  当二叉堆插入节点时，插入的位置是完全二叉树的最后一个位置。
+     *  然后再和其父节点进行比较，如果不符合最小堆的性质，就让新插入的节点上浮，和父节点交换位置
      *
      *@param array 待调整的堆
-
      */
     public static void upAdjust(int[] array){
         
@@ -36,7 +34,7 @@ public class min_BinaryHeap {
         array[childIndex] = temp;
     }
 
-    /*
+    /**
      * 下沉操作
      * 当需要删除某个节点时，被删除的节点的位置就空了出来
      * 我们用完全二叉树的最后一个节点临时补到被删除的节点的位置上，然后进行“下沉”操作
@@ -75,7 +73,8 @@ public class min_BinaryHeap {
     }
 
 
-    /* 构建二叉堆
+    /**
+     * 构建二叉堆
      * 构建二叉树的本质就是让一个没有顺序的数组中的每个节点依次下沉
      * 首先从最后一个 【非叶子节点】开始
      * 下沉结束后，再从上一个 【非叶子节点】 继续
@@ -95,7 +94,7 @@ public class min_BinaryHeap {
     public static void main(String[] args){
     
         int[] array = new int[] {1, 3, 2, 6, 5, 7, 8, 9, 10, 0};
-        /*
+        /**
          *                          1
          *                       /     \
          *                     3         2
@@ -109,7 +108,7 @@ public class min_BinaryHeap {
         System.out.println(Arrays.toString(array));
         
         int[] array2 = new int[] {7, 1, 3, 10, 5, 2, 8, 9, 6};
-        /*
+        /**
          *                           7
          *                         /   \
          *                       1       3

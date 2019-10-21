@@ -6,8 +6,8 @@ import java.util.Arrays;
 public  class max_BinaryHeap{
 
 
-    /*上浮操作
-     *
+    /**
+     * 上浮操作
      * @param array 待操作的数组
      */
     public static void upAdjust(int[] array){
@@ -27,8 +27,8 @@ public  class max_BinaryHeap{
     
     } 
 
-    /* 下沉操作
-     *
+    /**      
+     * *下沉操作
      * @param array 待操作的数组
      * @param parentIndex 待下沉的父节点的索引值
      * @param length 堆的有效大小
@@ -56,7 +56,7 @@ public  class max_BinaryHeap{
         array[parentIndex] = temp;
     }
 
-    /* 构建二叉堆
+    /** 构建二叉堆
      *
      * @param array 待构建的数组
      */
@@ -73,7 +73,7 @@ public  class max_BinaryHeap{
     public static void main(String[] args){
     
         int[] array = new int[] {1, 3, 2, 6, 5, 7, 8, 9, 10, 0};
-        /*
+        /**
          *                          1
          *                       /     \
          *                     3         2
@@ -83,12 +83,12 @@ public  class max_BinaryHeap{
          *             9    10  0
          */
         bulidHeap(array);
-        upAdjust(array);
+        //upAdjust(array);
         // 上浮操作
         System.out.println(Arrays.toString(array));
         
         int[] array2 = new int[] {7, 1, 3, 10, 5, 2, 8, 9, 6};
-        /*
+        /**
          *                           7
          *                         /   \
          *                       1       3
