@@ -11,7 +11,7 @@ public class CountSort_V2 {
         int max = array[0];
         int min = array[0];
 
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
         
             if (array[i] > max) {
                 max = array[i];
@@ -39,9 +39,10 @@ public class CountSort_V2 {
         int[] sortArray = new int[array.length];
 
         // 倒序遍历初始数组，进行排序索引
-        for (int i = array.length - 1; i >=0; i--) {
+        for (int i = array.length - 1; i >= 0; i--) {
         
             sortArray[countArray[array[i] - min] - 1] = array[i];
+            countArray[array[i] - min]--;
         }
 
         return sortArray;
